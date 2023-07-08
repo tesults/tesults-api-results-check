@@ -1,6 +1,6 @@
 {
   "name": "tesults-api-results-check",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Tesults API results check",
   "main": "index.js",
   "scripts": {

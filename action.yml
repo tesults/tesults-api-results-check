@@ -1,5 +1,8 @@
 name: 'Tesults API results check'
 description: 'Checks results for a given target and build name'
+branding:
+  icon: 'check-circle'
+  color: 'white'
 inputs:
   target:  # Target Id
     description: 'Target Id'
