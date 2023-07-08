@@ -12,15 +12,15 @@ const target = core.getInput('target')
 const build = core.getInput('build')
 const api_token = core.getInput('api_token')
 
-if (target === undefined) {
+if (target === undefined || target === "-") {
     console.log("Missing input: target")
     process.exit(1)
 }
-if (build === undefined) {
+if (build === undefined || build === "-") {
     console.log("Missing input: build")
     process.exit(1)
 }
-if (api_token === undefined) {
+if (api_token === undefined || api_token === "-") {
     console.log("Missing input: api_token")
     process.exit(1)
 }
