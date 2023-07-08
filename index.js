@@ -27,13 +27,13 @@ if (api_token === undefined || api_token === "-") {
 
 // Check results
 
-console.log("Check results for build: " + process.env.BUILD)
+console.log("Check results for build: " + build)
 
 const options = {
     hostname: 'www.tesults.com',
-    path: encodeURI('/api/results?target=' + process.env.TARGET + '&build=' + process.env.BUILD),
+    path: encodeURI('/api/results?target=' + target + '&build=' + build),
     headers: {
-        Authorization: 'Bearer ' + process.env.API_TOKEN
+        Authorization: 'Bearer ' + api_token
     }
 }
 https.get(options, (response) => {
