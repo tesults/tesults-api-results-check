@@ -29,6 +29,9 @@ if (api_token === undefined || api_token === "-") {
 
 console.log("Check results for build: " + build)
 
+core.setOutput("pass", 0)
+core.setOutput("total", 0)
+
 const options = {
     hostname: 'www.tesults.com',
     path: encodeURI('/api/results?target=' + target + '&build=' + build),
@@ -46,6 +49,8 @@ https.get(options, (response) => {
             const resultObject = JSON.parse(result)
             const run = resultObject.data.results.runs[0]
             console.log("Results url: " + run.run_url)
+            core.setOutput("pass", run.pass)
+            core.setOutput("total", run.total)
             if (run.pass !== run.total) {
                 console.log(run.pass + " tests passed out of " + run.total)
                 process.exit(1)
