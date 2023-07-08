@@ -1,0 +1,23 @@
+name: 'Tesults API results check'
+description: 'Checks results for a given target and build name'
+inputs:
+  target:  # Target Id
+    description: 'Target Id'
+    required: true
+    default: '-'
+  build: # Build name
+    description: "Build name"
+    required: true,
+    default: '-'
+  api_token: # API token
+    description: "API token"
+    required: true,
+    default: '-'
+outputs:
+  pass:  # Passing number of test cases
+    description: 'Passing number of test cases'
+  total: # Total number of test cases
+    description: 'Total number of test cases'
+runs:
+  using: 'node16'
+  main: 'index.js'

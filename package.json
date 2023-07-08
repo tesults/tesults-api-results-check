@@ -1,0 +1,51 @@
+{
+  "name": "tesults-api-results-check",
+  "version": "1.0.0",
+  "description": "Tesults API results check",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tesults/tesults-api-results-check.git"
+  },
+  "keywords": [
+    "tesults",
+    "api",
+    "results",
+    "check",
+    "test",
+    "automation",
+    "automated",
+    "continuous",
+    "integration",
+    "ci",
+    "cd"
+  ],
+  "author": {
+    "name": "Tesults",
+    "email": "help@tesults.com",
+    "url": "https://www.tesults.com"
+  },
+  "contributors": [
+    {
+      "name": "Ajeet Dhaliwal",
+      "email": "ajeet.dhaliwal@tesults.com"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Ajeet Dhaliwal",
+      "email": "ajeet.dhaliwal@tesults.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tesults/tesults-api-results-check/issues"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  }
+}
