@@ -35,3 +35,7 @@ with:
   build: '<build name>'
   api_token: '<api token>'
 ```
+
+## Documentation
+
+Learn more here: https://www.tesults.com/docs/github-actions and contact help@tesults.com with any questions.
